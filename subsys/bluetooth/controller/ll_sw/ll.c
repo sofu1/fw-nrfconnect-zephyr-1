@@ -11,7 +11,7 @@
 #include <soc.h>
 #include <device.h>
 #include <drivers/clock_control.h>
-#ifdef CONFIG_CLOCK_CONTROL_NRF
+#if defined(CONFIG_CLOCK_CONTROL_NRF) || defined(CONFIG_CLOCK_CONTROL_NRFXLIB)
 #include <drivers/clock_control/nrf_clock_control.h>
 #endif
 #include <bluetooth/hci.h>
